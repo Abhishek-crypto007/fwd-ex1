@@ -37,16 +37,19 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
 '''
+
+
+
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-PORT = 8000  # we’ll use port 8000 since it avoids admin permission issues
+PORT = 8000  
 
 content = 
-
+    
     <html>
 
-    <head>
-        <title>TCP/IP Protocol Suite</title>
+        <head>
+             <title>TCP/IP Protocol Suite</title>
         <style>
             body { font-family: Arial; background:#f2f2f2; padding:20px; }
             h1 { color:#333; }
