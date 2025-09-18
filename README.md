@@ -41,7 +41,7 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 
 PORT = 8000  # we’ll use port 8000 since it avoids admin permission issues
 
-content = """
+content = 
 
     <html>
 
@@ -90,7 +90,7 @@ content = """
         </ul>
     </body>
     </html>
-"""
+
 
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
