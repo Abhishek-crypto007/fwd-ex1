@@ -102,7 +102,6 @@ httpd = HTTPServer(server_address, myhandler)
 print(f"🚀 My webserver is running at http://localhost:{PORT}")
 httpd.serve_forever()
 
-'''
 
 ## OUTPUT:
 ![alt text](<Screenshot (4).png>)
