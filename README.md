@@ -36,9 +36,7 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-'''
-
-
+```
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
@@ -46,9 +44,9 @@ PORT = 8000
 
 content = 
     
-    <html>
+ <html>
 
-        <head>
+<head>
              <title>TCP/IP Protocol Suite</title>
         <style>
             body { font-family: Arial; background:#f2f2f2; padding:20px; }
@@ -61,7 +59,7 @@ content =
         <h1>🌐 TCP/IP Protocol Suite</h1>
         <h2>Application Layer</h2>
 
-        <ul>
+  <ul>
             <li>HTTP, HTTPS</li>
             <li>FTP</li>
             <li>SMTP, POP3, IMAP</li>
@@ -70,13 +68,13 @@ content =
             <li>SNMP</li>
         </ul>
 
-        <h2> Transport Layer</h2>
+<h2> Transport Layer</h2>
         <ul>
             <li>TCP</li>
             <li>UDP</li>
         </ul>
 
-        <h2>Internet Layer</h2>
+ <h2>Internet Layer</h2>
         <ul>
             <li>IP (IPv4, IPv6)</li>
             <li>ICMP</li>
@@ -84,15 +82,15 @@ content =
             <li>IGMP</li>
         </ul>
 
-        <h2>Network Access Layer</h2>
+<h2>Network Access Layer</h2>
         <ul>
             <li>Ethernet</li>
             <li>Wi-Fi</li>
             <li>PPP</li>
             <li>Frame Relay</li>
-        </ul>
-    </body>
-    </html>
+ </ul>
+ </body>
+</html>
 
 
 class myhandler(BaseHTTPRequestHandler):
@@ -108,7 +106,7 @@ httpd = HTTPServer(server_address, myhandler)
 print(f"🚀 My webserver is running at http://localhost:{PORT}")
 httpd.serve_forever()
 
-'''
+```
 ## OUTPUT:
 ![alt text](<Screenshot (4).png>)
 ![alt text](<Screenshot (5).png>)
